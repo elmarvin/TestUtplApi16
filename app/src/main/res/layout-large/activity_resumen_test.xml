@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_resumen_test"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.elmarvin.examesnestest1.ResumenTestActivity">
+
+    <TextView
+        android:text="Resumen de Test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textViewResumen"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:textColor="?attr/colorPrimaryDark"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+
+    <Space
+        android:id="@+id/space2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewResumen"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:text="Calificación Cuantitativa:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/space2"
+        android:id="@+id/textViewResumen2"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/space2"
+        android:gravity="center"
+        android:textStyle="normal|bold"
+        android:textSize="28sp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/space2" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewResumen2"
+        android:id="@+id/textViewCalificacionCuantitativo"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/space2"
+        android:gravity="center"
+        android:textColor="?android:attr/textColorLinkInverse"
+        android:textStyle="normal|bold"
+        android:textSize="100sp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/space2" />
+
+    <Space
+        android:id="@+id/space3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewCalificacionCuantitativo"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:text="Calificación Cualitativa:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/space3"
+        android:id="@+id/textViewResumen3"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/space2"
+        android:gravity="center"
+        android:textStyle="normal|bold"
+        android:textSize="28sp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/space2" />
+
+    <TextView
+        android:text="Deficiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewResumen3"
+        android:id="@+id/textViewCalificacionCualitativo"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/space2"
+        android:gravity="center"
+        android:textColor="?android:attr/textColorLinkInverse"
+        android:textStyle="normal|bold"
+        android:textSize="60sp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/space2" />
+
+    <Space
+        android:id="@+id/space4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewCalificacionCualitativo"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:text="Resumen:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/space4"
+        android:id="@+id/textViewResumen4"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/space2"
+        android:gravity="center"
+        android:textStyle="normal|bold"
+        android:textSize="28sp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/space2" />
+
+    <TextView
+        android:id="@+id/textViewPositivas"
+        android:layout_below="@+id/textViewResumen4"
+        android:text="0 Positivas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/space2"
+        android:gravity="center"
+        android:textColor="@android:color/holo_green_light"
+        android:textStyle="normal|bold"
+        android:textSize="45sp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/space2" />
+
+    <Space
+        android:id="@+id/space5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewPositivas"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/textViewNegativas"
+        android:layout_below="@+id/textViewPositivas"
+        android:text="0 Negativas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/space2"
+        android:gravity="center"
+        android:textColor="@android:color/holo_red_light"
+        android:textStyle="normal|bold"
+        android:textSize="45sp"
+        android:layout_toRightOf="@+id/space2"
+        android:layout_alignParentRight="true" />
+
+    <Space
+        android:id="@+id/space6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewNegativas"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/textViewNoSabe"
+        android:layout_below="@+id/textViewNegativas"
+        android:text="0 No Sabe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/space2"
+        android:gravity="center"
+        android:textColor="@android:color/holo_purple"
+        android:textStyle="normal|bold"
+        android:textSize="45sp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/space2" />
+
+    <Button
+        android:text="Guardar Y Finalizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/buttonGuardarFinalizar"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/holo_blue_bright"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:textSize="30sp"/>
+
+</RelativeLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pregunta4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.elmarvin.examesnestest1.Pregunta4Activity">
+
+    <TextView
+        android:id="@+id/textViewPreguntaNro"
+        android:text="Pregunta Numero 0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="25sp"
+        android:textStyle="normal|bold"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+
+    <Space
+        android:id="@+id/space1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewPreguntaNro"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/textViewEncabezadoPregunta"
+        android:text="En un aula de cuarto grado el profesor realiza 8 grupos de tres alumnos en cada uno y sobran dos alumnos del total. ¿Cuántos alumnos hay en el grupo?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/space1"
+        android:layout_alignParentStart="true"
+        android:textSize="28sp"
+        android:textColor="?android:attr/textColorPrimaryDisableOnly"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true" />
+
+    <Space
+        android:id="@+id/space2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewEncabezadoPregunta"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/textViewInformacion2"
+        android:text="Escoja Una Respuesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/space2"
+        android:textSize="25sp"
+        android:textStyle="normal|bold"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/space2"
+        android:textAlignment="center"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/space2" />
+
+    <Space
+        android:id="@+id/space3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewInformacion2"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupRespuestas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/space3"
+        android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+        <RadioButton
+            android:id="@+id/radio_respuesta1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:checked="true"
+            android:text="9+4=1"
+            android:textSize="28sp" />
+
+        <RadioButton
+            android:id="@+id/radio_respuesta2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="9/12*3=100"
+            android:textSize="28sp"/>
+
+        <RadioButton
+            android:id="@+id/radio_respuesta3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="9-12-3=100"
+            android:textSize="28sp"/>
+
+        <RadioButton
+            android:id="@+id/radio_respuesta4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="9*45*45"
+            android:textSize="28sp"/>
+
+        <RadioButton
+            android:id="@+id/radio_respuesta5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="9*45*45"
+            android:textSize="28sp"/>
+
+        <RadioButton
+            android:id="@+id/radio_respuesta6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="9*45*45"
+            android:textSize="28sp"/>
+
+    </RadioGroup>
+
+    <Button
+        android:text="Aceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/buttonAceptar"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/space3"
+        android:background="@android:color/holo_blue_light"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/space3"
+        android:textSize="28sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonAceptar"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textViewEstadoRespuesta"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+
+
+</RelativeLayout>

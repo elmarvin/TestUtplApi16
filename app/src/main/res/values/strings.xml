@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Test de Matemática</string>
+    <string name="texto_introduccion">Este test permirá conocer su nivel de Razonamiento Aritmético</string>
+    <string name="texto_introduccion2">Para Ingresar al Test, Ingrese su Número de Cedula Válido</string>
+    <string name="title_activity_resumen">ResumenActivity</string>
+</resources>
